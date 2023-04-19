@@ -1,7 +1,12 @@
 import classes from './BlogPosts.module.css';
 
-function BlogPosts() {
-  return <ul classes={classes.list}></ul>;
+function BlogPosts({title, blog}) {
+  return (
+    <ul className={classes.posts}>
+      <li>{title}</li>
+      <li>{blog}</li>
+    </ul>
+  )
 }
 
 export default BlogPosts;
